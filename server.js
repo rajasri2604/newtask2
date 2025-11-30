@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000', // for local React dev
-    'https://newtask2-employee-system.vercel.app/' // your deployed frontend
+    'https://newtask2-7db5.vercel.app/' // your deployed frontend
   ],
   credentials: true,
 }));
@@ -33,4 +33,5 @@ app.get('/', (req, res) => {
 // start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
 
