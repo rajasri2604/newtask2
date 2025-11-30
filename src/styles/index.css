@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------
+   🔥 LIGHT MODE NAVBAR GRADIENT (Only Navbar)
+   -------------------------------------------- */
+.navbar-light {
+  background: linear-gradient(90deg, #d8b4fe, #e9d5ff);
+  background-size: 200% 200%;
+  animation: navMove 6s ease infinite;
+}
+
+.navbar-dark {
+  background: linear-gradient(90deg, #3b0764, #5b21b6);
+  background-size: 200% 200%;
+  animation: navMove 6s ease infinite;
+}
+
+@keyframes navMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --------------------------------------------
+   🌙 DARK / LIGHT PAGE BACKGROUND
+   -------------------------------------------- */
+.light-bg {
+  background-color: #f5eaff !important;   /* light purple */
+  color: #4b0082 !important;              /* dark purple text */
+}
+
+.dark-bg {
+  background-color: #240046 !important;   /* Dark plum purple */
+  color: #ffffff !important;              /* clear white text */
+}
+
+/* REMOVE FADES so content won’t disappear */
+.animate-none {
+  animation: none !important;
+}
